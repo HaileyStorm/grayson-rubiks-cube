@@ -103,7 +103,7 @@ export function makeScramble(length = 24) {
 }
 
 export const DAISY_SEQUENCE = parseMoves("F2 R2 B2 L2");
-export const WHITE_CROSS_SEQUENCE = parseMoves("U2");
+export const WHITE_CROSS_SEQUENCE = parseMoves("U' D2 B2 D2 L' F2 B2 D2 B2 L");
 
 export function rotateVectorArray(values, axis, angle) {
   const [x, y, z] = values;

@@ -17,6 +17,16 @@ Open the local URL printed by Vite, usually `http://127.0.0.1:5173/`.
 npm run build
 ```
 
+The static production build is written to `dist/`.
+
+## Package For Distribution
+
+```bash
+npm run dist:zip
+```
+
+This creates `release/cherry-cube-static.zip`. On Windows, recipients can unzip it and double-click `cherry-cube/start-cherry-cube.cmd`, which starts a tiny local server and opens the app. The same folder can also be served with any static web server.
+
 ## Verify
 
 ```bash

@@ -79,6 +79,7 @@ test('desktop presets, algorithm queue, camera controls, and mouse orbit', async
   await page.getByTestId('white-cross').click();
   await waitForCube(page);
   await expect(page.getByTestId('move-log')).toContainText('White cross');
+  expect(await page.evaluate(() => window.__cherryCube.isSolved())).toBe(false);
   await page.screenshot({ path: 'verification-screenshots/desktop-06-white-cross.png' });
 
   await page.getByTestId('algorithm-novice-right-hand-trigger').click();

@@ -78,7 +78,26 @@ class CherryCubeApp {
     document.querySelector('#app').innerHTML = `
       <main class="app-shell">
         <section class="scene-wrap" aria-label="Interactive 3D Rubik's cube">
-          <div class="branch" aria-hidden="true"></div>
+          <svg class="tree" viewBox="0 0 900 520" aria-hidden="true" focusable="false">
+            <path class="tree-trunk" d="M83 520 C117 430 133 334 123 235 C119 184 132 129 171 82" />
+            <path class="tree-limb main" d="M133 245 C230 180 374 126 563 102 C674 88 792 65 900 24" />
+            <path class="tree-limb" d="M238 176 C279 118 342 78 430 50" />
+            <path class="tree-limb" d="M354 137 C418 163 469 201 508 252" />
+            <path class="tree-limb" d="M522 106 C572 145 615 190 650 243" />
+            <path class="tree-limb" d="M632 84 C694 106 757 143 821 196" />
+            <g class="tree-blossoms">
+              <circle cx="224" cy="168" r="10" />
+              <circle cx="257" cy="151" r="7" />
+              <circle cx="304" cy="126" r="9" />
+              <circle cx="385" cy="82" r="8" />
+              <circle cx="472" cy="118" r="10" />
+              <circle cx="535" cy="102" r="7" />
+              <circle cx="603" cy="145" r="9" />
+              <circle cx="681" cy="95" r="8" />
+              <circle cx="742" cy="128" r="10" />
+              <circle cx="806" cy="181" r="7" />
+            </g>
+          </svg>
           <div id="blossoms" aria-hidden="true"></div>
           <canvas id="scene" data-testid="cube-canvas"></canvas>
           <div class="hud">
@@ -451,6 +470,10 @@ class CherryCubeApp {
     this.enqueueMany(moves, { source: label });
     if (label === 'Daisy') {
       this.camera.position.set(5.8, -4.7, 6.2);
+      this.controls.target.set(0, 0, 0);
+      this.controls.update();
+    } else if (label === 'White cross') {
+      this.camera.position.set(4.2, 7.2, 4.2);
       this.controls.target.set(0, 0, 0);
       this.controls.update();
     }
