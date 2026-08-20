@@ -43,3 +43,7 @@ Verification captures desktop and mobile screenshots in `verification-screenshot
 - FIFO move queue with visible move log, undo/redo for face turns, solved reset, legal random scramble, daisy preset, and white-cross preset.
 - Algorithm library grouped by novice, intermediate, and expert face-turn sequences.
 - Mouse/touch orbit and zoom through OrbitControls, camera preset buttons, and keyboard shortcuts.
+
+## Support
+
+This project is free. Donations are entirely optional and never affect access or support; they sustain Hailey's open-source work. You can use [Buy Me a Coffee](https://buymeacoffee.com/threadspan), or see the [donation details, safety, and privacy notes](https://github.com/HaileyStorm/threadspan/blob/main/docs/DONATIONS.md). No route is preferred. This repository does not collect donor identities or telemetry, and it never asks for wallet keys; verify recipients independently because transfers may be irreversible.
